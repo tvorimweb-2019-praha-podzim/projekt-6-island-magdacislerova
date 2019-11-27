@@ -22,16 +22,95 @@ body {
 
 .titulek {
     font-family: 'Raleway', serif;
+    font-size:36px;
+    text-align: center;
+    padding: 0;
+}
+
+.hlavicka {
+  background-image: url(images/island-hlavicka.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 500px auto;
+  padding: 5px;
+  color: white;
+  max-width: 500px;
+  margin-bottom: 15px;
+  }
+
+.perex {
+  text-align: center;
+  align-content: center;
+  font-size: 11px;
+  }
+
+.autor {
+  font-style: italic;
+  text-align: center;
+  opacity: 0.7;
+  font-size: 11px;
 }
 
 
 /* MENU */
+
+.menu {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(175, 170, 170);
+  text-transform: uppercase;
+  font-size: 8px;
+  display: block;
+  padding: 2px 3px;
+  border-bottom: rgb(235, 234, 234) solid 0.1px;
+  font-family: 'Raleway', serif;
+}
 
 
 
 
 /* OBSAH */
 
+p {
+  font-size: 11px;
+  padding: 0 15px;
+  margin: 1;
+}
+
+.img-cover {
+  height: 0;
+  padding-bottom: 56.25%;
+  padding-top: 20px;
+}
+
+.img-cover img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+h2 {
+  padding: 15px;
+  font-size: 16px;
+  font-family: 'Raleway', serif;
+}
+
+.popisek a {
+  color: grey;
+  font-size: 8px;
+}
+
+.popisek {
+  color: grey;
+  font-size: 8px;
+  text-align: center;
+
+}
 
 
 
