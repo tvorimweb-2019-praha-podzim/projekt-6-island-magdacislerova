@@ -15,6 +15,7 @@ body {
     font-family: 'Merriweather', serif;
     font-size: 16px;
     line-height: 1.6;
+    max-width: 500px;
 }
 
 
@@ -25,30 +26,30 @@ body {
     font-size:36px;
     text-align: center;
     padding: 0;
+    margin-top: 0;
 }
 
 .hlavicka {
-  background-image: url(images/island-hlavicka.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/island-hlavicka.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 500px auto;
-  padding: 5px;
+  background-size: cover;
+  padding: 10px 5px;
   color: white;
-  max-width: 500px;
   margin-bottom: 15px;
   }
 
 .perex {
   text-align: center;
   align-content: center;
-  font-size: 11px;
+  font-size: 12px;
   }
 
 .autor {
   font-style: italic;
   text-align: center;
   opacity: 0.7;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 
@@ -58,15 +59,16 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .menu a {
   text-decoration: none;
   color: rgb(175, 170, 170);
   text-transform: uppercase;
-  font-size: 8px;
+  font-size: 9px;
   display: block;
-  padding: 2px 3px;
+  padding: 2px 4px;
   border-bottom: rgb(235, 234, 234) solid 0.1px;
   font-family: 'Raleway', serif;
 }
@@ -77,21 +79,35 @@ body {
 /* OBSAH */
 
 p {
-  font-size: 11px;
+  font-size: 12px;
   padding: 0 15px;
   margin: 1;
 }
 
-.img-cover {
+.img-cover1 {
   height: 0;
   padding-bottom: 56.25%;
   padding-top: 20px;
 }
 
-.img-cover img {
+.img-cover2 {
+  height: 0;
+  padding-bottom: 49.13%;
+  padding-top: 20px;
+}
+
+.img-cover3 {
+  height: 0;
+  padding-bottom: 37.5%;
+  padding-top: 20px;
+}
+
+.img-cover1 img,
+.img-cover2 img,
+.img-cover3 img {
   width: 100%;
   height: auto;
-  max-width: 500px;
+  
 }
 
 h2 {
@@ -109,14 +125,61 @@ h2 {
   color: grey;
   font-size: 8px;
   text-align: center;
-
 }
 
 
-
 /* FOTOGALERIE */
+.popisek-galerie {
+  color: grey;
+  font-size: 11px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Raleway', serif;
+  line-height: normal;
+  padding-bottom: 15px;
+  margin: 0;
+}
 
+.popisek-copy {
+  font-weight: normal;
+  font-size: 9px;
+}
 
+.popisek-copy a {
+  color: grey;
+}
 
+.foto {
+  text-align: center;
+}
 
 /* PATICKA */
+
+.paticka {
+  background-image: linear-gradient(to bottom, rgb(73, 71, 71), rgb(214, 210, 210) 15%);
+  opacity: 0.3;
+  padding-top: 15px;
+}
+
+.paticka p {
+  color: rgb(10, 10, 10);
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.paticka a {
+  color:  rgb(41, 40, 40);
+  font-weight: bold;
+}
+
+/*TABLET*/
+
+@media (min-width: 501px) {
+  
+  body {
+    max-width: 1000px;
+  }
+
+
+
+}
